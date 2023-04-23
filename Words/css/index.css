@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(../images/bg1.jpg) no-repeat #000;
+  background-size: cover;
+  line-height: 1.15;
+}
+header {
+  position: relative;
+  height: 1.25rem;
+  border: 2px solid rgba(25, 186, 139, 0.17);
+  background-size: 100% 100%;
+}
+header h1 {
+  font-size: 0.475rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem;
+}
+header .Menu {
+  position: absolute;
+  top: 0;
+  right: 0.375rem;
+  line-height: 0.9375rem;
+  font-size: 0.25rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+header .Menu li{
+  display: inline-block; position: relative;margin: 30px 15px;top:0;
+}
+header .Menu li a{ display: block; font-size: 18px; color: #fff; line-height: 30px; padding: 0 20px;text-decoration: none }
+header .Menu li a:hover{color: #ffe200;}
+
+.mainbox {
+  min-width: 1024px;
+  max-width: 1920px;
+  left:5%;
+  right: 5%;
+  top:5%;
+
+  display: flex;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+}
+.mainbox .column {
+  flex: 3;
+}
+.mainbox .column:nth-child(2) {
+  flex: 5;
+  margin: 0 0.125rem 0.1875rem;
+  overflow: hidden;
+}
+
+.column h2 {
+  height: 0.6rem;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+  line-height: 0.6rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.25rem;
+  font-weight: 400;
+}
+
+.map {
+  position: relative;
+  height: 10.125rem;
+}
+.map .chart1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 11.25rem;
+  width: 100%;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotate1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
+  }
+}

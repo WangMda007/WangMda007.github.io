@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>词云</title>
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <header>
+      <h1>粮食相关热词</h1>
+        <div class="Menu">
+          <ul>
+				<li><a href="../Influence/influence.html">返回</a></li>
+			</ul>
+        </div>
+
+    </header>
+    <section class="mainbox">
+      <div class="column">
+        <div class="map">
+          <div class="chart1"></div>
+        </div>
+      </div>
+    </section>
+<script src="js/echarts.js"></script>
+<script src="js/echarts-wordcloud.js"></script>
+<script src="js/data.js"></script>
+<script>
+  const chart = echarts.init(document.querySelector('.mainbox .chart1'));
+
+  option = {
+    tooltip: {
+      show: true,
+      position: 'top',
+      textStyle: {
+        fontSize: 30
+      }
+    },
+    series: [{
+      type: "wordCloud",
+      // 网格大小，各项之间间距
+      gridSize: 65,
+      // 形状 circle 圆，cardioid  心， diamond 菱形，
+      // triangle-forward 、triangle 三角，star五角星
+      shape: 'circle',
+      // 字体大小范围
+      sizeRange: [25, 80],
+      // 文字旋转角度范围
+      rotationRange: [0, 90],
+      // 旋转步值
+      rotationStep: 90,
+      // 自定义图形
+      // maskImage: "",
+      left: 'center',
+      top: 'center',
+      right: null,
+      bottom: null,
+      // 画布宽
+      width: '90%',
+      // 画布高
+      height: '80%',
+      // 是否渲染超出画布的文字
+      drawOutOfBound: false,
+      textStyle: {
+        normal: {
+          color: function() {
+            return 'rgb(' + [
+              Math.round(Math.random() * 200 + 55),
+              Math.round(Math.random() * 200 + 55),
+              Math.round(Math.random() * 200 + 55)
+            ].join(',') + ')';
+          }
+        },
+        emphasis: {
+          shadowBlur: 10,
+          shadowColor: '#2ac'
+        }
+      },
+      data: datas
+    }]
+  };
+  chart.setOption(option);
+  window.addEventListener("resize", function() {
+    myChart.resize();
+  });
+</script>
+</body>

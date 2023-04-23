@@ -1,0 +1,114 @@
+ * {
+     padding: 0;
+     margin: 0;
+ }
+.bgall {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    background: url("../images/bg1.png");
+
+
+}
+.Hcontainer {
+
+}
+ .first {
+     width: 100%;
+     height: 100%;
+ }
+ .first .title{
+     font-size:50px;
+     padding-top:6%;
+     text-align: center;
+     color: white;
+     font-weight:normal;
+ }
+
+.first .title1{
+     font-size:20px;
+    padding-top:1%;
+     text-align: center;
+     color: white;
+     font-weight:normal;
+ }
+.first .title2{
+     font-size:30px;
+    padding-top:15%;
+     padding-left: 10%;
+     color: white;
+     font-weight:normal;
+ }
+.first .title3{
+     font-size:20px;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+     color: white;
+ }
+.Bcontainer {
+	width: 60%;
+	height: 30%;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.Bcontainer .bt1{
+    margin-top: 0px;
+    transition-duration: 400ms;
+	width: 33%;
+	height: 100%;
+	position: absolute;
+	background: #3A6AF3;
+}
+.Bcontainer .bt1:hover{
+    margin-top: -20px;
+    transition-duration: 400ms;
+}
+.Bcontainer .bt2{
+    margin-top: 0px;
+    transition-duration: 400ms;
+	width: 33%;
+	height: 100%;
+	position: absolute;
+    left: 33%;
+	background: #E45050;
+}
+.Bcontainer .bt2:hover{
+    margin-top: -20px;
+    transition-duration: 400ms;
+}
+.Bcontainer .bt3{
+    margin-top: 0px;
+    transition-duration: 400ms;
+	width: 33%;
+	height: 100%;
+	position: absolute;
+    left:66%;
+	background: #A2C14D;
+}
+.Bcontainer .bt3:hover{
+    margin-top: -20px;
+    transition-duration: 400ms;
+}
+
+.state {
+    position: absolute;
+    bottom:40px;
+    left:400px;
+    color:white;
+    font-weight: normal;
+}
+
+@media (max-width: 1920px) and (min-width: 768px) {
+  html {
+    zoom: 80%;
+  }
+  @-ms-viewport {
+    width: 1920px;
+  }
+}

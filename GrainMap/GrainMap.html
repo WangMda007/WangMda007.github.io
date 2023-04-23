@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>乡村振兴粮食数据可视化</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>乡村振兴粮食产量及其影响因素数据可视化</h1>
+        <div class="Menu">
+          <ul>
+				<li><a href="../Forecast/Forecast.html">预测</a></li>|
+				<li><a href="../Influence/influence.html">影响</a></li>|
+				<li><a href="../HomePage/index.html">首页</a></li>
+			</ul>
+        </div>
+
+    </header>
+    <section class="mainbox">
+      <div class="column">
+        <div class="panel bar">
+          <h2>
+            全国各年粮食总产量(单位:万吨)
+          </h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line">
+          <h2>总播种面积及有效灌溉面积(千公顷)</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie">
+          <h2>近年主要粮食占比</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="map">
+          <div class="chart"></div>
+          <div class="map1"></div>
+        </div>
+      </div>
+      <div class="column">
+        <h2>粮食产量前十五名地区(单位:万吨)</h2>
+        <div class="panel1">
+
+
+        </div>
+        <div class="panel pie1">
+          <h2>农业机械总动力(单位:亿千瓦)</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/GrainMap.js"></script>
+  </body>
+</html>
